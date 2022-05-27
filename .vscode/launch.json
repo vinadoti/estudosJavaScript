@@ -1,0 +1,27 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-node", // o tipo de debug que será realizado
+            "request": "launch", // no momento do debug será iniciada a aplicação do zero.
+            "name": "8-loops",
+            "skipFiles": [  // o skipFiles nos mostra as estruturas internas do node que não precisam ser debugadas
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/cursoAlura/8-loops.js" // O caminho do arquivo que será executado.
+        },
+        {
+            "type": "pwa-node", // o tipo de debug que será realizado
+            "request": "launch", // no momento do debug será iniciada a aplicação do zero.
+            "name": "7-condicionais",
+            "skipFiles": [  // o skipFiles nos mostra as estruturas internas do node que não precisam ser debugadas
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/cursoAlura/7-condicionais.js" // O caminho do arquivo que será executado.
+        }
+    ]
+}
