@@ -12,7 +12,7 @@ console.log(salvador,saoPaulo,rioDeJaneiro);
 // Para facilitar e agilizar o processo, existe uma estrutura de dados chamada array, em que podemos armazenar diversos dados. 
 // A maneira de declarar um array é: utilizando a palavra new e o tipo da estrutura Array
 
-const listaDeDestinos = new array (
+const listaDeDestinos = new Array (
     `Salvador`,
     `São Paulo`,
     `Rio de Janeiro`
