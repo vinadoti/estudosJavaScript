@@ -48,3 +48,35 @@ E utilizando um seletor CSS de classe, ficaria assim:
 ```
 document.querySelector(".titulo");
 ```
+
+A função querySelector() nos retorna apenas um elemento, independentemente do que passarmos para a mesma.
+
+### método ```querySelectorAll()```
+
+Essa função nos retorna um array, com todos os elementos 
+
+### Limitando as casas decimais de um número
+
+ Alguns número possuem diversas casas decimais, tornando o número imenso. Podemos melhorar isso utilizando uma função que limita esta quantidade. Essa função é ```toFixed()```, que recebe como parâmetro a quantidade de casas decimais a serem exibidas depois do ponto.
+
+ ### Percorrendo uma lista com o ```lenght```
+
+ Todo array possui uma propriedade chamada length, que nos informa o seu tamanho. Então usamos ela para percorrer até o tamanho da lista
+
+ ### Alterar o CSS aplicado
+
+ Se adicionarmos ```style.color```, podemos alterar a cor da fonte na linha.
+ Para conseguirmos alterar a cor da fonte usamos a propriedade ```color```, para modificar o fundo, usamos a propriedade ```backgroundColor```. Porém, se tentarmos escrever da mesma forma como é feito no CSS (```background-color```), nosso código não funcionará. Quando queremos modificar um estilo com duas palavras, o hífen (-) não é aceito pela linguagem JavaScript. Teremos que utilizar o padrão Camel Case - no qual as palavras compostas ou frases são iniciadas com maiúsculas e unidas sem espaços.
+
+ Porém o local correto para definirmos o estilo da página é no arquivo CSS. 
+
+ É importante mantermos essa separação dos "mundos": o HTML é utilizado para marcar os elementos, o JavaScript para adicionar dinamismo e manipular a página, enquanto o CSS é responsável por estilizar. Logo, o ideal não é modificar o estilo da linha no código JavaScript, então qual é o meio termo entre não modificar o estilo diretamente, mas conseguir alterá-lo, no JavaScript?
+
+É uma boa prática, em vez de adicionarmos um estilo, incluirmos uma classe ao elemento.
+
+De volta ao JavaScript, assim como temos o ```style``` para acesso aos estilos e o ```textContent``` para acessarmos o conteúdo de texto de um elemento, teremos a ```classList``` para acessarmos as classes. E usando o método ```add```, adicionaremos a classe desejada.
+
+Exemplo:
+```
+paciente.classList.add("paciente-invalido");
+```
